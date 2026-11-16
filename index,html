@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>釜山五天四夜｜旅遊行程</title>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFCF6;--ink:#3E3A39;--pink:#F2A497;--yel:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Huninn','Noto Sans TC',sans-serif;line-height:1.6;font-size:16px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:3px solid var(--ink);display:flex;gap:6px;overflow-x:auto;padding:8px 10px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:11}
+nav a{flex:none;text-decoration:none;color:var(--ink);border:3px solid var(--ink);border-radius:999px;padding:2px 12px;font-size:14px;background:var(--bg)}
+nav a:nth-child(4n+1){background:var(--pink)}nav a:nth-child(4n+2){background:var(--yel)}nav a:nth-child(4n+3){background:var(--blue)}nav a:nth-child(4n){background:var(--green)}
+main{max-width:640px;margin:0 auto;padding:16px 14px 48px}
+section{margin-top:28px}
+h2{margin:0 0 12px;font-size:22px;display:inline-block;background:var(--yel);border:3px solid var(--ink);border-radius:18px;padding:2px 16px}
+.card{background:var(--bg);border:3px solid var(--ink);border-radius:24px;padding:14px 16px;margin-bottom:12px}
+.hero{text-align:center;background:var(--blue)}
+.hero svg{width:100%;height:auto;display:block}
+.hero h1{margin:6px 0 2px;font-size:28px}
+.hero p{margin:0;font-size:14px}
+.count{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.count div{background:var(--bg);border:3px solid var(--ink);border-radius:16px;padding:4px 10px;min-width:64px}
+.count b{display:block;font-size:24px}.count span{font-size:12px}
+.flight{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.flight .t{font-size:26px;font-weight:bold}.flight small{display:block;font-size:12px}
+.flight .mid{flex:1;text-align:center;font-size:12px;border-top:3px dashed var(--ink);padding-top:2px;position:relative}
+.badge{display:inline-block;border:3px solid var(--ink);border-radius:999px;padding:0 10px;font-size:13px;background:var(--pink)}
+.days{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px}
+.days button{flex:none;font:inherit;color:var(--ink);background:var(--bg);border:3px solid var(--ink);border-radius:18px;padding:4px 12px;cursor:pointer;text-align:center;line-height:1.3}
+.days button small{display:block;font-size:11px}
+.days button.on{background:var(--pink);animation:pop .5s}
+@keyframes pop{0%{transform:scale(.8)}50%{transform:scale(1.15)}75%{transform:scale(.96)}100%{transform:scale(1)}}
+.tl{position:relative;margin-left:8px;padding-left:20px;border-left:3px solid var(--ink)}
+.tl.in{animation:pop .5s}
+.it{position:relative;margin-bottom:12px}
+.it::before{content:"";position:absolute;left:-32px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--yel);border:3px solid var(--ink)}
+.it.must::before{background:var(--pink)}
+.it .tm{font-size:13px}.it .nm{font-size:17px}.it .ds{font-size:13px;opacity:.85}
+.tag{display:inline-block;border:2px solid var(--ink);border-radius:999px;padding:0 8px;font-size:12px;margin-right:4px}
+.must-t{background:var(--pink);border:2px solid var(--ink);border-radius:999px;padding:0 8px;font-size:12px;margin-left:4px}
+.daytitle{font-size:18px;margin:0 0 10px}
+label.ck{display:flex;gap:10px;align-items:flex-start;padding:6px 0;cursor:pointer}
+label.ck input{appearance:none;flex:none;width:24px;height:24px;border:3px solid var(--ink);border-radius:8px;background:var(--bg);margin:0;cursor:pointer}
+label.ck input:checked{background:var(--green)}
+label.ck input:checked::after{content:"✓";display:block;text-align:center;line-height:18px;font-size:16px}
+label.ck input:checked+span{text-decoration:line-through;opacity:.55}
+.grp{margin:0 0 4px;font-size:16px}
+.bar{height:16px;border:3px solid var(--ink);border-radius:999px;overflow:hidden;margin:0 0 10px}
+.bar i{display:block;height:100%;background:var(--green);width:0;transition:width .4s}
+.hotel p{margin:2px 0;font-size:14px}
+.sample{font-size:12px;text-align:center;opacity:.7;margin-top:24px}
+.float{animation:float 4s ease-in-out infinite}.float2{animation:float 5s ease-in-out infinite reverse}
+.train{animation:go 9s linear infinite}
+.spin{transform-origin:center;transform-box:fill-box;animation:sway 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-6px)}}
+@keyframes go{0%{transform:translateX(-120px)}100%{transform:translateX(780px)}}
+@keyframes sway{50%{transform:rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><a href="#top">首頁</a><a href="#flight">航班</a><a href="#plan">行程</a><a href="#todo">待辦</a><a href="#stay">住宿</a><a href="#pre">出發前</a><a href="#pack">行李</a></nav>
+<main id="top">
+<div class="card hero">
+<svg viewBox="0 0 400 220" role="img" aria-label="釜山廣安大橋、海岸列車與海鷗的插圖">
+<circle class="float2" cx="320" cy="48" r="26" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+<g class="float"><ellipse cx="70" cy="46" rx="34" ry="14" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/><ellipse cx="95" cy="38" rx="20" ry="12" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/></g>
+<g class="float2" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"><path d="M180 60q10-12 20 0q10-12 20 0"/><path d="M240 85q8-9 16 0q8-9 16 0"/></g>
+<path d="M0 150Q100 135 200 150T400 150V220H0z" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3"/>
+<g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<rect x="40" y="108" width="320" height="8" fill="#FFFCF6"/>
+<rect x="110" y="70" width="8" height="70" fill="#F2A497"/><rect x="282" y="70" width="8" height="70" fill="#F2A497"/>
+<path d="M114 72Q200 120 286 72" fill="none"/><path d="M40 108Q80 100 114 72M360 108Q320 100 286 72" fill="none"/>
+<path d="M130 108v-14M150 108v-24M170 108v-30M200 108v-32M230 108v-30M250 108v-24M270 108v-14" fill="none" stroke-width="2"/></g>
+<g class="spin"><path d="M30 190q10-30 20 0z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/></g>
+<rect x="0" y="182" width="400" height="6" fill="#3E3A39"/>
+<g class="train"><g stroke="#3E3A39" stroke-width="3"><rect x="-90" y="156" width="82" height="26" rx="13" fill="#F6D27A"/><rect x="-6" y="156" width="62" height="26" rx="13" fill="#F2A497"/></g>
+<rect x="-76" y="162" width="14" height="10" rx="5" fill="#FFFCF6"/><rect x="-54" y="162" width="14" height="10" rx="5" fill="#FFFCF6"/><rect x="-32" y="162" width="14" height="10" rx="5" fill="#FFFCF6"/><rect x="6" y="162" width="14" height="10" rx="5" fill="#FFFCF6"/><rect x="28" y="162" width="14" height="10" rx="5" fill="#FFFCF6"/></g>
+</svg>
+<h1>釜山五天四夜</h1>
+<p>2026.02.09 – 02.13　Visit Busan Pass 玩法版</p>
+</div>
+
+<section id="flight"><h2>航班資訊</h2>
+<div class="card"><span class="badge">去程 Day 1</span>
+<div class="flight"><div><div class="t">17:05</div><small>高雄 KHH</small></div><div class="mid">✈ 濟州航空・約 2 小時 30 分</div><div><div class="t">20:35</div><small>釜山金海機場</small></div></div>
+<small>濟州航空・抵達後搭地鐵直達池谷站住宿</small></div>
+<div class="card"><span class="badge" style="background:var(--blue)">回程 Day 5</span>
+<div class="flight"><div><div class="t">14:05</div><small>釜山金海機場</small></div><div class="mid">✈ 濟州航空 7C6255・約 2 小時</div><div><div class="t">16:05</div><small>高雄 KHH</small></div></div>
+<small>11:30 出發機場・到機場請出示航空公司訂位代號</small></div>
+<div class="card" style="background:var(--yel)"><b>⚠ 出發重點</b><br>托運行李內不可有電池類產品（手燈電池請放手提）。</div></section>
+
+<section id="plan"><h2>每日行程</h2>
+<div class="days" id="days"></div>
+<div class="card"><p class="daytitle" id="dt"></p><div class="tl" id="tl"></div><p class="ds" id="nt" style="font-size:13px;margin:8px 0 0"></p></div><p style="font-size:13px"><span class="must-t" style="background:var(--green);margin:0">VBP</span> = 可用 Visit Busan Pass 的景點</p></section>
+
+<section id="todo"><h2>待辦清單</h2><div class="card"><div class="bar"><i id="bar"></i></div><div id="todoList"></div></div></section>
+
+<section id="stay"><h2>住宿資訊</h2>
+<div class="card hotel"><span class="badge" style="background:var(--green)">池谷站 (Motgol)</span><p><b>Denbasta Hotel Daeyeon</b></p><p>地址：46 Motgol-ro 12beon-gil, Nam-gu, Busan</p><p>韓文：부산광역시 남구 못골로12번길 46</p><p>搭 Uber / Kakao T 時可直接貼上韓文地址</p><p>訂房編號：—</p></div></section>
+
+<section id="pre"><h2>出發前清單</h2><div class="card" id="preList"></div></section>
+<section id="pack"><h2>行李清單</h2><div class="card" id="packList"></div></section>
+<p class="sample">※ 去程航班號與飯店訂房編號待補。</p>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const T={飛機:'#F2A497',地鐵:'#A8D3E6',計程車:'#F2A497',巴士:'#F6D27A',列車:'#A8D3E6',步行:'#B9DAA5',用餐:'#F6D27A',遊艇:'#A8D3E6',備用:'#FFFCF6'};
+const days=[
+{d:'Day 1',w:'',t:'抵達與晚餐',i:[['17:05','高雄小港機場出發（濟州航空）','飛機','請出示航空公司訂位代號',0,0],['20:35','抵達金海機場・全家搭地鐵','地鐵','直達池谷站 (Motgol) 住宿點',0,0],['22:00','飯店附近宵夜','用餐','',0,0]]},
+{d:'Day 2',w:'',t:'海濱列車・X the SKY・Spa・傳統市場',i:[['09:30','海雲台遊客中心換取實體票','地鐵','地鐵 2 號線 池谷站 → 海雲台站',0,0],['10:30','機張 Skyline Luge（海東龍宮寺旁）','計程車','持 Pass 免費玩卡丁車。計程車約 12000 韓元。',1,1],['12:00','海雲台藍線松亭站・海岸列車','列車','持 Pass 免費。天空膠囊列車需自費（尾浦站↔青沙浦站），9:30–19:00，每 12–30 分一班，同票可在各站上下車一次。順序：尾浦站→青沙浦站→松亭站',0,1],['午餐','青沙浦海邊燒烤','用餐','烤貝與海鮮燒烤',0,0],['下午','海雲台 HLL SPA','步行','持 Pass 免費',0,1],['晚上','尾浦 釜山 X the SKY','步行','持 Pass 免費登 100 樓觀景台俯瞰海景',1,1],['晚上','海雲台傳統市場','用餐','尚國家辣炒年糕、水邊最好豬肉湯飯',0,0],['備用','CLUB OASIS','備用','鄰近備用景點',0,0]],n:'提醒：考慮最後一天 Busan Pass 48 小時截止時間。'},
+{d:'Day 3',w:'',t:'鑽石遊艇・Spa Land 汗蒸幕',i:[['上午','鑽石遊艇','遊艇','',0,0],['下午','Spa Land 汗蒸幕','計程車','持 Pass 免費進場 4 小時',1,1],['下午','西面商圈 & 田浦咖啡街','地鐵','Olive Young 購物（營業至 22:30）',0,0],['晚餐','味贊王鹽烤肉（西面店）','用餐','專業代烤厚切五花肉',0,0],['備用','RUNNING MAN','備用','鄰近備用景點',0,0]]},
+{d:'Day 4',w:'',t:'纜車・甘川洞・南浦洞',i:[['09:00','釜山站 2F 大廳 information 取 Visit Busan Pass','步行','',0,0],['09:20','搭 Busan City Tour Bus 橘線','巴士','松島海水浴場站（第 2 站）下車。一日票隨上隨下，週一、週二暫停營運。',0,0],['上午','松島海上纜車 & 龍宮雲橋','步行','持 Pass 免費搭纜車並參觀雲橋',1,1],['上午','甘川洞文化村','巴士','橘線第 4 站甘川洞文化村站。小王子・韓服體驗',1,1],['上午','手翻相簿','步行','',0,1],['晚上','南浦洞 & 富平市場','用餐','生牛肉拌活章魚、堅果糖餅',0,0]]},
+{d:'Day 5',w:'',t:'超市補貨與歸途',i:[['10:30','超市衝刺','步行','E-Mart 或 Lotte Mart 買伴手禮、雪香草莓',0,0],['11:30','出發機場','地鐵','準備搭 14:05 飛機返台',0,0],['14:05','金海機場起飛（濟州航空 7C6255）','飛機','共掛班號 H19786',0,0],['16:05','抵達高雄國際機場','飛機','',0,0]]}];
+let cur=0;
+function show(n,anim){cur=n;
+$('#days').innerHTML=days.map((x,k)=>`<button class="${k==n?'on':''}" data-k="${k}">Day ${k+1}</button>`).join('');
+$('#dt').textContent=`${days[n].d}｜${days[n].t}`;
+$('#nt').textContent=days[n].n||'';$('#tl').innerHTML=days[n].i.map(x=>`<div class="it ${x[4]?'must':''}"><div class="tm">${x[0]} <span class="tag" style="background:${T[x[2]]}">${x[2]}</span>${x[4]?'<span class="must-t">必去</span>':''}${x[5]?'<span class="must-t" style="background:var(--green)">VBP</span>':''}</div><div class="nm">${x[1]}</div>${x[3]?`<div class="ds">${x[3]}</div>`:''}</div>`).join('');
+const tl=$('#tl');tl.classList.remove('in');void tl.offsetWidth;if(anim)tl.classList.add('in')}
+$('#days').addEventListener('click',e=>{const b=e.target.closest('button');if(b)show(+b.dataset.k,1)});
+show(0);
+const lists={todoList:['在台灣先申請並設定 Kakao T app','韓國景點地址（韓文）先查好建檔，搭 Uber 方便使用','Uber 信用卡無法使用：回國後電話詢問 Uber 與信用卡公司','購買 Visit Busan Pass（Day 4 於釜山站 2F 取）','確認 Busan Pass 48 小時截止時間'],
+preList:['準備航空公司訂位代號（到機場提供）','確認護照效期','線上報到並截圖登機證','準備 eSIM 或網卡','換韓元現金（計程車、市場）','行動電源與手機充飽電'],
+packList:['護照','韓元現金與信用卡','手機・充電線・行動電源（手提）','手燈電池（不可托運，須手提）','轉接頭（韓國為圓雙孔）','泳衣與毛巾（Spa、汗蒸幕）','好走的鞋','外套（海邊風大）','摺疊購物袋（伴手禮）']};
+function store(k){try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(e){return[]}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+for(const k in lists){const done=store(k);$('#'+k).innerHTML=lists[k].map((t,i)=>`<label class="ck"><input type="checkbox" data-k="${k}" data-i="${i}" ${done.includes(i)?'checked':''}><span>${t}</span></label>`).join('')}
+function bar(){const a=document.querySelectorAll('#todoList input');const c=[...a].filter(x=>x.checked).length;$('#bar').style.width=(c/a.length*100)+'%'}
+document.addEventListener('change',e=>{const t=e.target;if(t.type!='checkbox')return;const k=t.dataset.k;const v=[...document.querySelectorAll(`input[data-k="${k}"]`)].map((x,i)=>x.checked?i:-1).filter(i=>i>=0);save(k,v);bar()});
+bar();
+</script>
+</body>
+</html>
